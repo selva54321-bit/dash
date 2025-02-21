@@ -1,0 +1,82 @@
+/* Container for the entire login page */
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Style for the image */
+  .pic {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+  }
+  
+  /* Style for the input fields */
+  .app input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Focus effect for input fields */
+  .app input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Style for the login button */
+  .app button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the button */
+  .app button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error alert styles */
+  .app .alert {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Optional: Add responsiveness */
+  @media (max-width: 600px) {
+    .app {
+      padding: 10px;
+    }
+  
+    .pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .app input,
+    .app button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
